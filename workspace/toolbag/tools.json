@@ -1,0 +1,188 @@
+[
+    {
+        "name": "create_tool",
+        "description": "With this tool, you can create new tools for youself.\nAfter creation, you will be able to use this tool.\nWhen you want make a tool, you can use this tool to do so.",
+        "func": "toolmanagement.create_tool",
+        "class": "toolmanagement",
+        "args": {
+            "name": "str",
+            "description": "str",
+            "func": "str",
+            "args": "Dict",
+            "class": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "update_tool",
+        "description": "This tool allows you to update the details of an existing tool, such as its description, function, or arguments. It helps keep your tool definitions current and accurate.",
+        "func": "toolmanagement.update_tool",
+        "class": "toolmanagement",
+        "args": {
+            "name": "str",
+            "new_description": "str",
+            "new_func": "str",
+            "new_args": "Dict"
+        },
+        "user_permission_required": "True"
+    },
+    {
+        "name": "delete_tool",
+        "description": "Use this tool to remove an existing tool from your collection. This is helpful for maintaining a clean and organized toolset by removing outdated or unnecessary tools.",
+        "func": "toolmanagement.delete_tool",
+        "class": "toolmanagement",
+        "args": {
+            "name": "str"
+        },
+        "user_permission_required": "True"
+    },
+    {
+        "name": "clone_tool",
+        "description": "This tool allows you to create a copy of an existing tool with a new name. It is useful for creating similar tools with slight variations.",
+        "func": "toolmanagement.clone_tool",
+        "class": "toolmanagement",
+        "args": {
+            "original_name": "str",
+            "new_name": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "tool_usage_statistics",
+        "description": "Use this tool to view statistics on how often each tool is used. It helps identify the most and least used tools in your collection.",
+        "func": "toolmanagement.tool_usage_statistics",
+        "class": "toolmanagement",
+        "args": {},
+        "user_permission_required": "False"
+    },
+    {
+        "name": "export_tools",
+        "description": "This tool allows you to export your tools and their configurations to a file. It's useful for backing up your tools or sharing them with others.",
+        "func": "toolmanagement.export_tools",
+        "class": "toolmanagement",
+        "args": {
+            "file_path": "str"
+        },
+        "user_permission_required": "True"
+    },
+    {
+        "name": "import_tools",
+        "description": "Use this tool to import tools from a file into your current tool collection. This is helpful for restoring tools from a backup or integrating tools shared by others.",
+        "func": "toolmanagement.import_tools",
+        "class": "toolmanagement",
+        "args": {
+            "file_path": "str"
+        },
+        "user_permission_required": "True"
+    },
+    {
+        "name": "create_py",
+        "description": "Create a Python file with the provided name and code content.",
+        "func": "coding.create_py",
+        "class": "coding",
+        "args": {
+            "name": "str",
+            "code": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "run_script",
+        "description": "Run the Python script located at the specified file path.",
+        "func": "coding.run_script",
+        "class": "coding",
+        "args": {
+            "file_path": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "edit_file",
+        "description": "Edit the content of an existing Python file at the specified file path.",
+        "func": "coding.edit_file",
+        "class": "coding",
+        "args": {
+            "file_path": "str",
+            "content": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "read_file",
+        "description": "Read the content of the Python file at the specified file path.",
+        "func": "coding.read_file",
+        "class": "coding",
+        "args": {
+            "file_path": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "view_workspace",
+        "description": "View all files in the workspace directory.",
+        "func": "coding.view_workspace",
+        "class": "coding",
+        "args": {},
+        "user_permission_required": "False"
+    },
+    {
+        "name": "view_files",
+        "description": "View all files in a specific directory within the workspace.",
+        "func": "coding.view_files",
+        "class": "coding",
+        "args": {
+            "path": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "run_py",
+        "description": "Execute a Python script by name within the workspace.",
+        "func": "coding.run_py",
+        "class": "coding",
+        "args": {
+            "name": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "debug_py",
+        "description": "Debug a Python script by name using static analysis.",
+        "func": "coding.debug_py",
+        "class": "coding",
+        "args": {
+            "name": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "list_py",
+        "description": "List all Python scripts in the workspace.",
+        "func": "coding.list_py",
+        "class": "coding",
+        "args": {},
+        "user_permission_required": "False"
+    },
+    {
+        "name": "delete_py",
+        "description": "Delete a Python script by name from the workspace.",
+        "func": "coding.delete_py",
+        "class": "coding",
+        "args": {
+            "name": "str"
+        },
+        "user_permission_required": "False"
+    },
+    {
+        "name": "edit_py",
+        "description": "Edit an existing Python script by name and update its code.",
+        "func": "coding.edit_py",
+        "class": "coding",
+        "args": {
+            "name": "str",
+            "new_code": "str"
+        },
+        "user_permission_required": "False"
+    }
+]
+
